@@ -24,6 +24,8 @@ after this change the click 2 btn will work just fine and alert with MyComponent
 - *click 4 btn* : when we click on this button, we will get an alert saying 'MyComponent'. This is probably the most interesting part about arrow functions and in turn this problem piece as well. Arrow functions work in a slightly different way as compared to traditional functions.
 They have a lexical scope - and needs not to be implicitly binded to the constructor to access the component's instance. Therefore upon execution it automatically gets scoped in the constructor. *Decalaring an arrow function inside a class component is technically declaring a property inside the class*
 
+***
+
 **2. Code Debugging**
 
 ![Screenshot (447)](https://user-images.githubusercontent.com/74761990/137500280-dd545d52-6970-4a8e-badd-34e2476e772d.png)
@@ -34,11 +36,19 @@ They have a lexical scope - and needs not to be implicitly binded to the constru
 - the setV(2) function is getting executed for sure but it as an async function and only gets called from the stack after 3000ms
 - whereas the doSomethingWithData(v) gets executed before the v is even updated and therefore it still has the preset value of variable v, which inturn is reflected in the console.
 
-**Fix** : an easy fix would be passing v as a dependancy so as to make sure the entire premises inside the UseEffect gets called also when the variable v changes. Therefore doSomethingWithData(v) will also get called when the value of v changes.
+**Fix** : an easy fix would be passing v as a dependancy so as to make sure the entire premises inside the UseEffect gets called also when the variable v changes. Therefore doSomethingWithData(v) will also get called when the value of v changes. And we will see the updated value of v in the console as well.
 
-**Code Refactor** 
+***
 
+**3. Code Refactor** 
+#### before
 ![4aa635c8905ef0c3a1cf3d30ec43f894](https://user-images.githubusercontent.com/74761990/137502837-b828590d-178e-422e-86ac-5139e976503b.png)
+
+#### after 
+![code](https://user-images.githubusercontent.com/74761990/137503678-99ff6f56-82ac-4f32-b72d-7210f00be633.png)
+
+Find the refactored code : [here](https://codesandbox.io/s/fragrant-silence-zkpb9?file=/src/App.js)
+
 
 
 
