@@ -7,6 +7,8 @@ I followed through just as I was asked to in the follow-up mail - answering the 
 Just to be sure that I do not waste any of your valuable time, I decided to append summaries of the technical questions here as well as. 
 And while you are at it , you can listen to [experience 🎵](https://www.youtube.com/watch?v=_VONMkKkdf4) - if you will. :D
 
+Please find the link to the recored video at the end of this README 📽
+
 ## Tech Crunch 101
 
 **1. Class Components, bindings, and invoking functions**
@@ -30,7 +32,7 @@ They have a lexical scope - and needs not to be implicitly binded to the constru
 
 ![Screenshot (447)](https://user-images.githubusercontent.com/74761990/137500280-dd545d52-6970-4a8e-badd-34e2476e772d.png)
 
-*current output in the console : 'variable value is 1*
+*current output in the console : 'variable value is 1'*
 
 *Reason* : since we are passing an empty array as the second argument to the useEffect function, the premises of the useEffect is only getting executed **ONCE** on pageload. Since passing [] as the 2nd arg essetialy means no dependancy and hence the useEffect gets executed only once when component mounts. Points to note :
 - the setV(2) function is getting executed for sure but it as an async function and only gets called from the stack after 3000ms
@@ -48,6 +50,12 @@ They have a lexical scope - and needs not to be implicitly binded to the constru
 ![code](https://user-images.githubusercontent.com/74761990/137503678-99ff6f56-82ac-4f32-b72d-7210f00be633.png)
 
 Find the refactored code : [here](https://codesandbox.io/s/fragrant-silence-zkpb9?file=/src/App.js)
+
+***
+
+### Video Link 
+https://drive.google.com/file/d/15F-o3BwVdzW3KcTebIa6G4TPPZqTRthd/view?usp=sharing
+
 
 
 
