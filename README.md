@@ -30,8 +30,15 @@ They have a lexical scope - and needs not to be implicitly binded to the constru
 
 *current output in the console : 'variable value is 1*
 
-*Reason* : since we are passing an empty array as the second argument to the useEffect function, the premises of the useEffect is only getting executed **ONCE** on pageload. Since passing [] as the 2nd arg essetialy means no dependancy and hence the useEffect gets executed only once when component mounts.Points to note :
-- the setV(2) function is getting executed for sure but it as an async function and only gets freed from the call stack after 3000ms
+*Reason* : since we are passing an empty array as the second argument to the useEffect function, the premises of the useEffect is only getting executed **ONCE** on pageload. Since passing [] as the 2nd arg essetialy means no dependancy and hence the useEffect gets executed only once when component mounts. Points to note :
+- the setV(2) function is getting executed for sure but it as an async function and only gets called from the stack after 3000ms
 - whereas the doSomethingWithData(v) gets executed before the v is even updated and therefore it still has the preset value of variable v, which inturn is reflected in the console.
+
+**Fix** : an easy fix would be passing v as a dependancy so as to make sure the entire premises inside the UseEffect gets called also when the variable v changes. Therefore doSomethingWithData(v) will also get called when the value of v changes.
+
+**Code Refactor** 
+
+![4aa635c8905ef0c3a1cf3d30ec43f894](https://user-images.githubusercontent.com/74761990/137502837-b828590d-178e-422e-86ac-5139e976503b.png)
+
 
 
