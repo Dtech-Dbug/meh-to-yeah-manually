@@ -1,4 +1,4 @@
-# meh-to-yeah-manually
+# meh-to-yeah-manually 💪🤗
 Apologies for stealing the 'from meh to yeah' line from the official website 😅
 
 Thank you for considering me as a potential addition and progressing to the next round. I was glad after I recieved the followup mail right after I applied for the Front End Engineering role @ Manual.
