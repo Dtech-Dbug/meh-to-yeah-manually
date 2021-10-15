@@ -22,7 +22,7 @@ Please find the link to the recored video at the end of this README 📽
 }``` 
 after this change the click 2 btn will work just fine and alert with MyComponent, which is just the name property of the component.
 
-- *click 3 btn* : when we click on this button, we will get an alert with MyComponent again. Interesting! Why? Because the click 3 btn has an eventlistener which is refering to a property ``` this.handleClick2``` that is declared inside the constructor and binded with the component instance as well. ``` this.handleClick2 = this.handleClick.bind(this)```
+- *click 3 btn* : when we click on this button, we will get an alert with MyComponent again. Interesting! Why? Because the click 3 btn has an eventlistener which is refering to a property ``` this.handleClick2``` that is declared inside the constructor which is just  ```handleClick1``` method binded with the component instance. ``` this.handleClick2 = this.handleClick.bind(this)```
 
 - *click 4 btn* : when we click on this button, we will get an alert saying 'MyComponent'. This is probably the most interesting part about arrow functions and in turn this problem piece as well. Arrow functions work in a slightly different way as compared to traditional functions.
 They have a lexical scope - and needs not to be implicitly binded to the constructor to access the component's instance. Therefore upon execution it automatically gets scoped in the constructor. *Decalaring an arrow function inside a class component is technically declaring a property inside the class*
