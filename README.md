@@ -1,4 +1,5 @@
 # meh-to-yeah-manually
+Apologies for stealing the 'from meh to yeah' line from the official website 😅
 
 Thank you for considering me as a potential addition and progressing to the next round. I was glad after I recieved the followup mail right after I applied for the Front End Engineering role @ Manual.
 
@@ -47,7 +48,8 @@ They have a lexical scope - and needs not to be implicitly binded to the constru
 ![4aa635c8905ef0c3a1cf3d30ec43f894](https://user-images.githubusercontent.com/74761990/137502837-b828590d-178e-422e-86ac-5139e976503b.png)
 
 #### after 
-![code](https://user-images.githubusercontent.com/74761990/137503678-99ff6f56-82ac-4f32-b72d-7210f00be633.png)
+![code2](https://user-images.githubusercontent.com/74761990/137506022-80009a9a-d0e9-4192-958f-e4476602f181.png)
+
 
 Find the refactored code : [here](https://codesandbox.io/s/fragrant-silence-zkpb9?file=/src/App.js)
 
